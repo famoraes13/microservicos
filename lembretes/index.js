@@ -21,7 +21,7 @@ app.get('/lembretes', (req , res ) => {
     lembretes[contador] = { contador , texto }
 
     axios.post("http://localhost:10000/eventos", {
-        tipo: "lembrete criado",
+        tipo: "Lembrete criado",
         dados: {contador,texto},
 
     });
